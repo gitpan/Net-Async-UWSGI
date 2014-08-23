@@ -1,0 +1,53 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 efe34b9d15ace20e801c2af627fc5ce20f055952 Changes
+SHA1 497b99e995dc80490dcca553601a6ad3799b72cf INSTALL
+SHA1 6b50b30fa6f8d063d96e32c9a81f3f82328925f7 LICENSE
+SHA1 d1906ab3f903ccce6fa90d8e0873f1ec03d8d8e1 MANIFEST
+SHA1 08b3bc6317ac12fabe494c784416f2e6b62cfe1d META.json
+SHA1 26b86aefb5c11e0acc866b70f94651131a6429e3 META.yml
+SHA1 38151c18014c574b7b8f9a9904b891cc08e6b21c Makefile.PL
+SHA1 7ecf89d8346048c1f51b4a3de8408243fd0cef00 README
+SHA1 24d01c174fafc4a56cb82bea5eecabe83381acc6 cpanfile
+SHA1 f10c99d76dfd9094b993c35c8cd7b167074cddcb dist.ini
+SHA1 b94143e138ffe117dee446167d5ddaa287f4a722 examples/nauwsgi.pl
+SHA1 4c80f9230f5a6f0aae9e63634958d7817bbd61fb lib/Net/Async/UWSGI.pm
+SHA1 30c2ea80291e5c0d97da303912abe46130031f12 lib/Net/Async/UWSGI/Server.pm
+SHA1 41e1ff4a265a2bf21122cb98ff7f3c98083c1096 lib/Net/Async/UWSGI/Server.pod
+SHA1 355c12355e4265125334d52174221294cea8a5ba lib/Net/Async/UWSGI/Server/Connection.pm
+SHA1 d0b091d80c881416ac27e36c4726540e039d7592 lib/Net/Async/UWSGI/Server/Connection.pod
+SHA1 985d9ded8d8ed7e344a09e52b1402e878e91da28 t/00-check-deps.t
+SHA1 e19ba841c8e9f080ee41852c662efbcd0d30867c t/00-compile.t
+SHA1 7afb07e4b5e2eb1753d17ed22928d0b39949ddf5 t/000-report-versions-tiny.t
+SHA1 17e45c299dcf76cfb06f85c88f023e9f97d527ca t/server-validation.t
+SHA1 300dd32e3eb508c9493722bdc28aa9fa4ce53e52 t/server.t
+SHA1 198d1665317c3d91e3bb81f0a3b8dad8d4d66f20 xt/release/common_spelling.t
+SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
+SHA1 296928dbbcaffd1514ccc9b77a1e6e03cfe9b068 xt/release/pod-syntax.t
+SHA1 34513f89a70b96f6412fe2ef0ad4d475e8cac66c xt/release/synopsis.t
+SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJT+LEnAAoJEFKElMNpjtyDj4wIAMBvajd8FK8OQW3TP0Sd9PlC
+mcb9fwMj99bfeyrC6uQlyJ3UuvW8Zapbd6s+MTEc8P8UBpDVFWe4h0TTW/k2/GQt
+jSuOg2JNrdvvZfz2kRKMt9f3oRoPvpbP/wUzgWarZtWMS86BS0x4UIzvqAudmFU1
+3tYuxIfBLdd7ikdtzZ424nFk5m4l68q9LQiWkhOkOPutYcB8+CZc970MGEvrlIbX
+iXNYyfvdq7F63cL+yO6Ds/4yYqomqrGo17uf7J1Pct9SWbM80MTDaDs3XxFCwZ+y
+yyl8V/MWMulvSFhaOUMLzhRcJ1fBGUnrBfy7TAl3o/b62UkBodLkbhOjjS9DBMs=
+=w2Ct
+-----END PGP SIGNATURE-----
