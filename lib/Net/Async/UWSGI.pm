@@ -3,7 +3,7 @@ package Net::Async::UWSGI;
 use strict;
 use warnings;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 =head1 NAME
 
@@ -11,7 +11,7 @@ Net::Async::UWSGI -
 
 =head1 VERSION
 
-Version 0.001
+Version 0.002
 
 =head1 SYNOPSIS
 

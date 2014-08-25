@@ -16,7 +16,7 @@ Net::Async::UWSGI::Server::Connection - represents an incoming connection to a s
 
 =head1 VERSION
 
-Version 0.001
+Version 0.002
 
 =head1 DESCRIPTION
 
@@ -87,6 +87,10 @@ Deal with trailing headers. Not yet implemented.
 =head2 read_to_length
 
 Read up to the expected fixed length of data.
+
+=head2 request_body
+
+Accessor for the request body, available to the L</finish_request> callback.
 
 =head1 INHERITED METHODS
 

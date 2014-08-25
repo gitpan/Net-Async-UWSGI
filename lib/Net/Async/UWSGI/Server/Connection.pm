@@ -1,5 +1,5 @@
 package Net::Async::UWSGI::Server::Connection;
-$Net::Async::UWSGI::Server::Connection::VERSION = '0.001';
+$Net::Async::UWSGI::Server::Connection::VERSION = '0.002';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Net::Async::UWSGI::Server::Connection - represents an incoming connection to a s
 
 =head1 VERSION
 
-Version 0.001
+Version 0.002
 
 =head1 DESCRIPTION
 
@@ -256,6 +256,14 @@ sub read_to_length {
 	return $self->finish_request unless $self->{remaining};
 	return 0;
 }
+
+=head2 request_body
+
+Accessor for the request body, available to the L</finish_request> callback.
+
+=cut
+
+sub request_body { shift->{request_body} }
 
 sub content_handler_raw {
 	my ($self, $data) = @_;

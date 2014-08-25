@@ -1,5 +1,5 @@
 package Net::Async::UWSGI::Server;
-$Net::Async::UWSGI::Server::VERSION = '0.001';
+$Net::Async::UWSGI::Server::VERSION = '0.002';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Net::Async::UWSGI -
 
 =head1 VERSION
 
-Version 0.001
+Version 0.002
 
 =head1 SYNOPSIS
 
