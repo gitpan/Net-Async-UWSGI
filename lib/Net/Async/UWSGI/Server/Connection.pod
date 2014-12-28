@@ -16,7 +16,7 @@ Net::Async::UWSGI::Server::Connection - represents an incoming connection to a s
 
 =head1 VERSION
 
-Version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -91,6 +91,10 @@ Read up to the expected fixed length of data.
 =head2 request_body
 
 Accessor for the request body, available to the L</finish_request> callback.
+
+=head2 content_handler_json
+
+Handle JSON content.
 
 =head1 INHERITED METHODS
 

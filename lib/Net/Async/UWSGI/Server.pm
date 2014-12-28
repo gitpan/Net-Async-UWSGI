@@ -1,5 +1,5 @@
 package Net::Async::UWSGI::Server;
-$Net::Async::UWSGI::Server::VERSION = '0.002';
+$Net::Async::UWSGI::Server::VERSION = '0.003';
 use strict;
 use warnings;
 
@@ -7,11 +7,11 @@ use parent qw(IO::Async::Notifier);
 
 =head1 NAME
 
-Net::Async::UWSGI -
+Net::Async::UWSGI::Server - server implementation for UWSGI
 
 =head1 VERSION
 
-Version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

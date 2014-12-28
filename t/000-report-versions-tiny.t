@@ -50,7 +50,7 @@ sub pmver {
 
 eval { $v .= pmver('ExtUtils::MakeMaker','6.48') };
 eval { $v .= pmver('File::Spec','any version') };
-eval { $v .= pmver('Future','0.29') };
+eval { $v .= pmver('Future','0.30') };
 eval { $v .= pmver('HTTP::Response','any version') };
 eval { $v .= pmver('IO::Async','0.62') };
 eval { $v .= pmver('IO::Handle','any version') };

@@ -1,17 +1,17 @@
 package Net::Async::UWSGI;
-# ABSTRACT: 
+# ABSTRACT: IO::Async support for dealing with UWSGI requests
 use strict;
 use warnings;
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 =head1 NAME
 
-Net::Async::UWSGI -
+Net::Async::UWSGI - support the universal webserver gateway interface protocol in IO::Async
 
 =head1 VERSION
 
-Version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

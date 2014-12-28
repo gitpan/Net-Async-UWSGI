@@ -1,16 +1,16 @@
 {
-   "abstract" : "use strict;",
+   "abstract" : "IO::Async support for dealing with UWSGI requests",
    "author" : [
       "Tom Molesworth <cpan@perlsite.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Zilla version 5.029, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Net-Async-UWSGI",
    "prereqs" : {
@@ -26,14 +26,16 @@
       },
       "develop" : {
          "requires" : {
+            "Test::More" : "0",
             "Test::Pod" : "1.41",
             "Test::Synopsis" : "0",
+            "Test::Version" : "1",
             "version" : "0.9901"
          }
       },
       "runtime" : {
          "requires" : {
-            "Future" : "0.29",
+            "Future" : "0.30",
             "HTTP::Response" : "0",
             "IO::Async" : "0.62",
             "JSON::MaybeXS" : "0",
@@ -66,6 +68,6 @@
       },
       "homepage" : "http://search.cpan.org/dist/Net-Async-UWSGI/"
    },
-   "version" : "0.002"
+   "version" : "0.003"
 }
 

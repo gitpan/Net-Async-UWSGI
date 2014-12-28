@@ -1,5 +1,5 @@
 package Net::Async::UWSGI::Server::Connection;
-$Net::Async::UWSGI::Server::Connection::VERSION = '0.002';
+$Net::Async::UWSGI::Server::Connection::VERSION = '0.003';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Net::Async::UWSGI::Server::Connection - represents an incoming connection to a s
 
 =head1 VERSION
 
-Version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -169,8 +169,9 @@ sub finish_request {
 		if $self->has_body;
 	$self->{completion} = $self->{on_request}->($self)
 	 ->then($self->curry::write_response)
-	 ->on_fail(sub { warn "failed? @_" })
-	 ->on_ready($self->curry::close_now);
+	 ->on_fail(sub {
+	 	$self->debug_printf("Failed while attempting to handle request: %s (%s)", @_);
+	})->on_ready($self->curry::close_now);
 	return sub {
 		my ($self, $buffref, $eof) = @_;
 		$self->{completion}->cancel if $eof && !$self->{completion}->is_ready;
@@ -274,12 +275,27 @@ sub content_handler_raw {
 	}
 }
 
+=head2 content_handler_json
+
+Handle JSON content.
+
+=cut
+
 sub content_handler_json {
 	my ($self, $data) = @_;
 	if(defined $data) {
-		$self->json->incr_parse($data);
+		eval {
+			$self->json->incr_parse($data);
+			1
+		} or do {
+			$self->debug_printf("Invalid JSON received: %s", $@);
+		};
 	} else {
-		return $self->json->incr_parse
+		return eval {
+			$self->json->incr_parse
+		} // do {
+			$self->debug_printf("Invalid JSON from incr_parse: %s", $@);
+		}
 	}
 }
 
