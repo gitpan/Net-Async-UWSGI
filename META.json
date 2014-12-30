@@ -13,6 +13,11 @@
       "version" : 2
    },
    "name" : "Net-Async-UWSGI",
+   "no_index" : {
+      "directory" : [
+         "inc"
+      ]
+   },
    "prereqs" : {
       "build" : {
          "requires" : {
@@ -68,6 +73,6 @@
       },
       "homepage" : "http://search.cpan.org/dist/Net-Async-UWSGI/"
    },
-   "version" : "0.003"
+   "version" : "0.004"
 }
 

@@ -11,6 +11,8 @@ SIGNATURE
 cpanfile
 dist.ini
 examples/nauwsgi.pl
+inc/Devel/AssertOS.pm
+inc/Devel/CheckOS.pm
 lib/Net/Async/UWSGI.pm
 lib/Net/Async/UWSGI/Server.pm
 lib/Net/Async/UWSGI/Server.pod

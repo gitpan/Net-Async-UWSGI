@@ -1,5 +1,5 @@
 package Net::Async::UWSGI::Server::Connection;
-$Net::Async::UWSGI::Server::Connection::VERSION = '0.003';
+$Net::Async::UWSGI::Server::Connection::VERSION = '0.004';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Net::Async::UWSGI::Server::Connection - represents an incoming connection to a s
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 DESCRIPTION
 
